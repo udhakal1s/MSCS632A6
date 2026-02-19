@@ -48,7 +48,7 @@ Both versions include safe concurrency, clean shutdown, logging, and error handl
 - `results.txt` contains processed task lines and FAIL lines
 
 
-## Key Differences
+## Notes
 - Java uses threads and `synchronized`/`wait()`/`notifyAll()` to safely share the queue.
 - Go uses goroutines and channels to safely pass work to workers.
 - Both implementations handle errors and shut down safely after work is finished.
